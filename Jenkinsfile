@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         // Define any environment variables here
-        AWS_REGION = 'ap-aouth-1'
+        AWS_REGION = 'ap-south-1'
         IMAGE_NAME = 'todo-backend'
         ECR_REGISTRY = '476287788215.dkr.ecr.${AWS_REGION}.amazonaws.com'
         ECR_REPO = "${ECR_REGISTRY}/${IMAGE_NAME}"
@@ -38,4 +38,6 @@ pipeline {
             }
         }
     }    
+}
+
 }
